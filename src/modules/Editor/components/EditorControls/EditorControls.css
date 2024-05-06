@@ -1,0 +1,119 @@
+.editor-controls {
+  box-sizing: border-box;
+  overflow: auto;
+  font-size: 12px;
+  line-height: 18px;
+  border-left: 1px solid #e6e6e6;
+}
+
+.section {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.section > * {
+  margin: 14px;
+}
+
+.section-header {
+  font-weight: bold;
+}
+
+.action {
+  all: unset;
+  display: block;
+  color: #007be5;
+  cursor: pointer;
+}
+
+.action:hover {
+  color: #33a0ff;
+}
+
+.action:focus-visible {
+  outline: 2px solid #0d99ff;
+  outline-offset: 1px;
+}
+
+.action.danger {
+  color: #f24822;
+}
+
+.action.danger:hover {
+  color: #ff7a5c;
+}
+
+.text-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-field input {
+  flex: 1 1 0;
+  box-sizing: border-box;
+  min-width: 0;
+  height: 28px;
+  padding-left: 7px;
+  font: inherit;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+}
+
+.text-field input:focus {
+  border: 1px solid #0d99ff;
+  outline: 1px solid #0d99ff;
+  outline-offset: -2px;
+}
+
+.textarea-field textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 7px;
+  font: inherit;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  resize: none;
+}
+
+.textarea-field textarea:focus {
+  border: 1px solid #0d99ff;
+  outline: 1px solid #0d99ff;
+  outline-offset: -2px;
+}
+
+.button-group-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-group {
+  display: inline-flex;
+  gap: 1px;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+}
+
+.button-group > button {
+  all: unset;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  height: 24px;
+  min-width: 24px;
+  padding: 0 4px;
+  cursor: pointer;
+}
+
+.button-group > button:not(:last-child) {
+  box-shadow: 1px 0 0 #e6e6e6;
+}
+
+.button-group > button:focus-visible {
+  outline: 2px solid #0d99ff;
+}
+
+.button-group > button.selected {
+  background: #e6e6e6;
+}
